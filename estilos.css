@@ -1,0 +1,351 @@
+/* Parte del cuerpo y menu. LA RESOLUCIÓN POR DEFECTO O PRINCIPAL QUE HE ELEGIDO, ES LA DE 1080 */
+/* Después mediante dos media query cambio a la resolución inferior y a la superior. */
+body{ 
+    font-family: 'Poppins', sans-serif;      
+    font-weight: 700;
+}
+.menu{
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Parte del Logo y menu span */
+.logo{
+    color: #127af3;
+}
+.menu .fixed {
+    margin: 14px 3px;
+}
+
+.menu span {
+    float: left;
+    display: block;
+    margin: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu span:nth-child(1){
+    padding-left: 10px;
+}
+
+.menu span:nth-child(3){
+    padding-left: 8%;
+}
+
+.menu .icon{
+    display: none;
+    padding: 14px 16px;
+}
+
+.boton {
+    cursor: pointer;
+}
+
+.menu .right{
+    float: right;
+}
+
+.menu .premium{
+    color: #127af3;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 1px 10px;
+    margin: 11px 16px;
+}
+
+/* Parte principal y contenido de la misma */
+.principal{
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.principal .contenido {
+    max-width: 42%;
+}
+
+.principal .contenido .cool{
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.principal .contenido .titulo {
+    font-size: 35px;
+}
+
+.principal .contenido div{
+    padding: 11px;
+}
+
+.principal .contenido .acciones {
+    display: flex;
+}
+
+.principal .contenido .acciones div a{
+    color: black;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.principal .contenido .acciones .boton{
+    background-color: #127af3;
+    color: white;
+    padding: 9px 34px;
+    border-radius: 31px;
+    font-size: 18px;
+    max-width: 150px;
+}
+
+.grey {
+    color: grey;
+}
+
+.principal .image{
+    max-height: 280px;
+}
+
+/* Apartado donde tengo los items */
+.items{
+    background-color: #2e302f;
+    display: flex;
+    height: 500px;
+}
+
+.items .dots{
+    display: none;
+}
+.items .listado{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items .tortuga{
+    display: block;
+    width: 40%;
+    margin-top:260px
+}
+
+.items div ul li {
+    color: white;
+    font-weight: 500;
+    padding-bottom: 12px;
+    list-style: none;
+    background-image: url(img/bullet.svg); /*De aquí he sacado lo del bullet: https://stackoverflow.com/questions/7775594/css-list-style-image-size*/
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 19px;
+    padding-left: 30px;
+    background-position-y: 3px;
+}
+
+.items .tortuga img {
+    width: 350px;
+    float: right;
+}
+
+/* Apartado de referencias con sus items y contenido */
+.referencias {
+    background-color: #127af3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    flex-direction: row;
+}
+
+.referencias li {
+    background-color: #0e6ad7;
+}
+
+/* Esta clase círculo la he creado para tener la información que necesito para los bordes de la foto del hombre Pepe López de los comentarios */
+.circulo { 
+    border-radius: 50%;
+    width: 75px;
+    border-style: solid;
+    border-color: #006ad7;
+    z-index: 10; 
+}
+
+.referencias .item {
+    width: 250px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.referencias .contenido {
+    background-color: #006ad7;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-top: 50px;
+    margin-top: -31px; /* He puesto esto en negativo porque no conseguía meter la fotografía de Pepe Lopez dentro del cuadro de texto del comentario. */
+}
+
+/* Apartado donde tengo el form, la parte de contacto y el mapa de Google */
+.texto {
+    text-align: center;
+}
+
+.nombre-persona:before { /*Esta clase la he creado para que el nombre de Pepe López lleve el guión delante como se pide, y el espacio */
+    content: "- ";
+}
+
+.nombre-persona {
+    font-style: italic;
+}
+
+.contacto {
+    background-color: #efefef;
+    display: flex;
+    height: 700px;
+}
+
+.contiene-form {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 106px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 395px;
+    margin-right: 100px;
+    font-weight: 300;
+}
+
+.form h2 {
+    font-weight: 600;
+}
+
+.form .input-group{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.form .boton{
+    margin-top: 25px;
+    background-color: #127af3;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    padding: 9px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.mapa {
+    height: 100%;
+    width: 35%;
+}
+
+/* En esta parte vienen los Media Query. Este primero es el de 768px */
+
+@media screen and (max-width: 768px){
+    .menu span:not(.fixed) {display: none;}
+    .menu div.icon{
+        float: right;
+        display: block;
+    }
+    .principal{
+        flex-direction: column;
+    }
+    .principal .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .principal .contenido .cool{
+        margin-top: 15%;
+    }
+    .principal .contenido .acciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .principal .image {
+        max-height: 411px;
+        margin-bottom: 15%;
+    }
+
+    .items {
+        height: 300px;
+    }
+
+    .items .listado{
+        width: 100%;
+    }
+
+    .items div ul li { /*No sabía como mostrarlo en el orden que pedía, aquí es donde encontré la respuesta https://stackoverflow.com/questions/14745297/how-to-display-an-unordered-list-in-two-columns*/
+        float: left;
+        width: 50%;
+    }
+
+    .items .tortuga{
+        display: none;
+    }
+
+    .referencias {
+        flex-direction: column;
+    }
+
+    .referencias .item {
+        width: 80%;
+    }
+
+    .referencias .contenido {
+        width: 100%;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contiene-form {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .mapa {
+        margin-top: 20px;
+        width: 90%;
+    }
+}
+
+
+/* Este Media Query es el de 1450px */
+
+@media screen and (min-width: 1450px){
+    .items .dots{
+        display: block;
+        background-color: #127af3;
+        height: 280px;
+        margin-top: -39px;
+        padding-top: 65px;
+        padding-left: 53px;
+        max-width: 169px;
+    }
+}
